@@ -9,20 +9,26 @@ public class ApproxPi {
 	public static void main(String[] args) {
 		
 		int points_count  = 0;
-		int points_circle = 0;
-		double pi_value   = 0.0;
-		
 		if(args.length < 1) {
 			System.err.println("");
 			points_count = DEFAULT_POINTS;
 			
 		}
 		
+		int points_circle = 0;
+		double pi_value   = 0.0;
 		points_count = Integer.parseInt(args[0]);
 		
+		for(int i = 0; i < points_count; i++) {
+			double x,y;
+			x = Math.random();
+			y = Math.random();
+			if((x*x + y*y) <= 1)
+				points_circle++;
+		}
 		
 		
-		
+		pi_value = ((double)points_circle)/((double)points_count);
 		
 		printStatistics(points_count, points_circle, pi_value);
 	}
