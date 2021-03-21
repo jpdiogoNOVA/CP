@@ -18,6 +18,7 @@ public class ApproxPi {
 			y = Math.random();
 			if((x*x + y*y) <= 1)
 				points_circle++;
+			// Just so I can commit
 			
 		}
 		
