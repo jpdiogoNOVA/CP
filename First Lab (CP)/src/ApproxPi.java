@@ -1,7 +1,7 @@
 
 public class ApproxPi {
 	
-	public static final int DEFAULT_POINTS = 1000;
+	public static final int DEFAULT_POINTS = 100000000;
 	public static final String TOTAL_POINTS_STAT = "Total number of points: ";
 	public static final String POINTS_INSIDE_CIRCLE_STAT = "Points within the circle: ";
 	public static final String PI_ESTIMATION_STAT = "Pi estimation: ";
